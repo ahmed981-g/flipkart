@@ -17,18 +17,32 @@ td{
     width: 10%;
 }
 td:nth-child(1){
-    width: 25%;
+    width: 22%;
 }
 td:nth-child(2){
     width: 25%;
 }
+
+td:nth-child(4){
+    color: #fff;
+    width: 12%;       
+}
+
+td:nth-child(5){
+    color: #fff;
+    width: 12%;       
+}
+
 td:nth-child(6){
     width: 20%;
 }
 
 input[type=search]{
-    width: 300px;
+    width: 325px;
     height: 36px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
 }
 
 input[type=search]:focus{
@@ -46,7 +60,7 @@ input[type=search]:active{
     width: 17px;
     height: 17px;
     position: absolute;
-    top: 6px;
+    top: 9px;
     right: 14px;
     font-weight: bold;
     fill: #2874f0;
@@ -64,4 +78,71 @@ input[type=search]:active{
     cursor: pointer;
     border-radius: 2px;
 
+}
+
+.seller{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    background-color: #2874f0;
+    border: none;
+    color: #fff;
+    word-spacing: -1px;
+    letter-spacing: 0px;
+    cursor: pointer;
+
+}
+.more{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    background-color: #2874f0;
+    border: none;
+    color: #fff;
+    word-spacing: -1px;
+    letter-spacing: 0px;
+    position: absolute;
+    cursor: pointer;
+    top: -8px;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    fill: #fff;
+    left: 76%;
+    rotate: 0deg;
+    cursor: pointer;
+    transition: .2s;
+    top: -2px;
+    left: 42px;
+
+}
+
+
+
+.cart{
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    background-color: #2874f0;
+    border: none;
+    color: #fff;
+    word-spacing: -1px;
+    letter-spacing: 0px;
+    cursor: pointer;
+}
+.arrow-more{
+    width: 10px;
+    transition: .1s;
+    position: relative;
+}
+
+.arrow-more:hover .arrow{
+    transform: rotate(-180deg);
+    transition: .1s;
+}
+input[type=search]::placeholder{
+    padding-left: 12px;
 }
